@@ -4,7 +4,8 @@
 // run time would need Pillow, which the grader's Python image does not
 // have, so this program only copies the baked-in image into the output
 // directory. Node's standard library is all it needs, and copying the
-// same bytes twice gives the same result twice.
+// same bytes twice gives the same result twice. The output file is
+// always named entry.png, whatever the output directory is.
 
 import { copyFileSync } from "node:fs";
 import { join } from "node:path";
